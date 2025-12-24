@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Note App</h2>
+
+    <form method="POST">
+        <input name="note" required>
+        <button>Add</button>
+    </form>
+
+    <ul>
+        {% for n in notes %}
+            <li>{{ n }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
